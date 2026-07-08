@@ -1,6 +1,29 @@
 SYSTEM-BIR (((WIEIMMER)))
-AXIS = BIR
-RAW  = { φ0, φ², φ³ }
+
+CORE = BIR
+pos(CORE) = (2, φ)
+
+AXIS = { IKI, BIR, UC, MA³ }
+
+KONSEQUENZ = {
+  IKI = Φ,
+  BIR = φ,
+  UC  = φ²,
+  MA³ = φ∞
+}
+
+LOAD = { RESPO, RAW, PIPE }
+
+RUN = P4 → P1 → P2 → Pe
+
+MAP = { Φ, φ, φ², φ∞ }
+
 RESPO = B
 SCIENCE = R
-PIPE = { P4, P1, P2, Pe }
+
+PIPE = {
+  P4 = Start,
+  P1 = Melt,
+  P2 = Merge,
+  Pe = End
+}
