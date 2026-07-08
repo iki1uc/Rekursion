@@ -2,4 +2,3 @@ RESPO-BIR (((WIEIMMER)))
 hardware RAW
 CODE = φ ; pos(CODE) = (2, φ)
 scientist = R ; respo = B
-P4 → P1 → P2 → Pe
