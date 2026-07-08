@@ -1,8 +1,40 @@
-<scanner>
+<html>
+<head>
+<title>SCANNER-BIR (((WIEIMMER)))</title>
+</head>
+
+<body>
+
+<section id="scanner">
+
   <station>BIR</station>
   <code>φ</code>
   <task>Iteration ausführen</task>
-  <pipeline>P4 → P1 → P2 → Pe</pipeline>
-  <execute>φ(input)</execute>
-  <output>iteration(input)</output>
-</scanner>
+
+  <pipeline>
+    P4 → P1 → P2 → Pe
+  </pipeline>
+
+  <input>
+    value = {{INPUT}}
+  </input>
+
+  <execute>
+    step_P4 = start({{INPUT}})
+    step_P1 = melt(step_P4)
+    step_P2 = merge(step_P1)
+    result  = φ(step_P2)
+  </execute>
+
+  <output>
+    iteration = {{RESULT}}
+  </output>
+
+  <return>
+    SEEu.md ← {{RESULT}}
+  </return>
+
+</section>
+
+</body>
+</html>
